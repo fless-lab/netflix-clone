@@ -1,0 +1,59 @@
+/* Importation de la librairie d'icon fontawesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+/* Ajout du font de netflix */
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('fonts/NetflixSans-Medium.otf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('fonts/NetflixSans-Regular.otf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('fonts/NetflixSans-Bold.otf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('fonts/NetflixSans-Light.otf') format('truetype');
+    font-weight: 300;
+}
+
+
+/* CSS Reset + Default config */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', Helvetica, sans-serif;
+}
+
+body{
+    /* background-color: black; */
+    color: white;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("./img/bg.jpg");
+    position: relative; /* Ajoutez cette ligne pour positionner les éléments fils */
+}
+
+.header::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4); /* Couleur de fond semi-transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
